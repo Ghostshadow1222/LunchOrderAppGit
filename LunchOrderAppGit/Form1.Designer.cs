@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             MainCourseGrp = new GroupBox();
+            SaladRdo = new RadioButton();
+            PizzaRdo = new RadioButton();
+            HamburgerRdo = new RadioButton();
             HamburgerGrp = new GroupBox();
+            HamburgerSide3Cbo = new CheckBox();
+            HamburgerSide2Cbo = new CheckBox();
+            HamburgerSide1Cbo = new CheckBox();
             OrderTotalGrp = new GroupBox();
+            OrderTotalTxt = new TextBox();
+            TaxTxt = new TextBox();
+            SubtotalTxt = new TextBox();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             OrderBtn = new Button();
             ExitBtn = new Button();
             PizzaGrp = new GroupBox();
-            SaladGrp = new GroupBox();
-            HamburgerRdo = new RadioButton();
-            PizzaRdo = new RadioButton();
-            SaladRdo = new RadioButton();
-            HamburgerSide1Cbo = new CheckBox();
-            HamburgerSide2Cbo = new CheckBox();
-            HamburgerSide3Cbo = new CheckBox();
-            PizzaSide1Cbo = new CheckBox();
-            PizzaSide2Cbo = new CheckBox();
             PizzaSide3Cbo = new CheckBox();
-            SaladSide1Cbo = new CheckBox();
-            SaladSide2Cbo = new CheckBox();
+            PizzaSide2Cbo = new CheckBox();
+            PizzaSide1Cbo = new CheckBox();
+            SaladGrp = new GroupBox();
             SaladSide3Cbo = new CheckBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            SubtotalTxt = new TextBox();
-            TaxTxt = new TextBox();
-            OrderTotalTxt = new TextBox();
+            SaladSide2Cbo = new CheckBox();
+            SaladSide1Cbo = new CheckBox();
             MainCourseGrp.SuspendLayout();
             HamburgerGrp.SuspendLayout();
             OrderTotalGrp.SuspendLayout();
@@ -72,6 +72,39 @@
             MainCourseGrp.TabStop = false;
             MainCourseGrp.Text = "Main Course";
             // 
+            // SaladRdo
+            // 
+            SaladRdo.AutoSize = true;
+            SaladRdo.Location = new Point(6, 72);
+            SaladRdo.Name = "SaladRdo";
+            SaladRdo.Size = new Size(91, 19);
+            SaladRdo.TabIndex = 2;
+            SaladRdo.TabStop = true;
+            SaladRdo.Text = "Salad - $4.95";
+            SaladRdo.UseVisualStyleBackColor = true;
+            // 
+            // PizzaRdo
+            // 
+            PizzaRdo.AutoSize = true;
+            PizzaRdo.Location = new Point(6, 47);
+            PizzaRdo.Name = "PizzaRdo";
+            PizzaRdo.Size = new Size(89, 19);
+            PizzaRdo.TabIndex = 1;
+            PizzaRdo.TabStop = true;
+            PizzaRdo.Text = "Pizza - $5.95";
+            PizzaRdo.UseVisualStyleBackColor = true;
+            // 
+            // HamburgerRdo
+            // 
+            HamburgerRdo.AutoSize = true;
+            HamburgerRdo.Location = new Point(6, 22);
+            HamburgerRdo.Name = "HamburgerRdo";
+            HamburgerRdo.Size = new Size(124, 19);
+            HamburgerRdo.TabIndex = 0;
+            HamburgerRdo.TabStop = true;
+            HamburgerRdo.Text = "Hamburger - $6.95";
+            HamburgerRdo.UseVisualStyleBackColor = true;
+            // 
             // HamburgerGrp
             // 
             HamburgerGrp.Controls.Add(HamburgerSide3Cbo);
@@ -83,6 +116,36 @@
             HamburgerGrp.TabIndex = 1;
             HamburgerGrp.TabStop = false;
             HamburgerGrp.Text = "Add-on items ($.75/each)";
+            // 
+            // HamburgerSide3Cbo
+            // 
+            HamburgerSide3Cbo.AutoSize = true;
+            HamburgerSide3Cbo.Location = new Point(6, 73);
+            HamburgerSide3Cbo.Name = "HamburgerSide3Cbo";
+            HamburgerSide3Cbo.Size = new Size(89, 19);
+            HamburgerSide3Cbo.TabIndex = 2;
+            HamburgerSide3Cbo.Text = "French Fries";
+            HamburgerSide3Cbo.UseVisualStyleBackColor = true;
+            // 
+            // HamburgerSide2Cbo
+            // 
+            HamburgerSide2Cbo.AutoSize = true;
+            HamburgerSide2Cbo.Location = new Point(6, 48);
+            HamburgerSide2Cbo.Name = "HamburgerSide2Cbo";
+            HamburgerSide2Cbo.Size = new Size(179, 19);
+            HamburgerSide2Cbo.TabIndex = 1;
+            HamburgerSide2Cbo.Text = "Ketchup, mustard, and mayo";
+            HamburgerSide2Cbo.UseVisualStyleBackColor = true;
+            // 
+            // HamburgerSide1Cbo
+            // 
+            HamburgerSide1Cbo.AutoSize = true;
+            HamburgerSide1Cbo.Location = new Point(6, 23);
+            HamburgerSide1Cbo.Name = "HamburgerSide1Cbo";
+            HamburgerSide1Cbo.Size = new Size(175, 19);
+            HamburgerSide1Cbo.TabIndex = 0;
+            HamburgerSide1Cbo.Text = "Lettuce, tomato, and onions";
+            HamburgerSide1Cbo.UseVisualStyleBackColor = true;
             // 
             // OrderTotalGrp
             // 
@@ -98,6 +161,57 @@
             OrderTotalGrp.TabIndex = 2;
             OrderTotalGrp.TabStop = false;
             OrderTotalGrp.Text = "groupBox3";
+            // 
+            // OrderTotalTxt
+            // 
+            OrderTotalTxt.Location = new Point(100, 80);
+            OrderTotalTxt.Name = "OrderTotalTxt";
+            OrderTotalTxt.ReadOnly = true;
+            OrderTotalTxt.Size = new Size(100, 23);
+            OrderTotalTxt.TabIndex = 5;
+            // 
+            // TaxTxt
+            // 
+            TaxTxt.Location = new Point(100, 51);
+            TaxTxt.Name = "TaxTxt";
+            TaxTxt.ReadOnly = true;
+            TaxTxt.Size = new Size(100, 23);
+            TaxTxt.TabIndex = 4;
+            // 
+            // SubtotalTxt
+            // 
+            SubtotalTxt.Location = new Point(100, 22);
+            SubtotalTxt.Name = "SubtotalTxt";
+            SubtotalTxt.ReadOnly = true;
+            SubtotalTxt.Size = new Size(100, 23);
+            SubtotalTxt.TabIndex = 3;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(25, 83);
+            label3.Name = "label3";
+            label3.Size = new Size(69, 15);
+            label3.TabIndex = 2;
+            label3.Text = "Order Total:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(25, 54);
+            label2.Name = "label2";
+            label2.Size = new Size(69, 15);
+            label2.TabIndex = 1;
+            label2.Text = "Tax (7.75%):";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(40, 25);
+            label1.Name = "label1";
+            label1.Size = new Size(54, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Subtotal:";
             // 
             // OrderBtn
             // 
@@ -124,107 +238,12 @@
             PizzaGrp.Controls.Add(PizzaSide3Cbo);
             PizzaGrp.Controls.Add(PizzaSide2Cbo);
             PizzaGrp.Controls.Add(PizzaSide1Cbo);
-            PizzaGrp.Location = new Point(424, 12);
+            PizzaGrp.Location = new Point(218, 12);
             PizzaGrp.Name = "PizzaGrp";
             PizzaGrp.Size = new Size(200, 100);
             PizzaGrp.TabIndex = 5;
             PizzaGrp.TabStop = false;
             PizzaGrp.Text = "Add-on items ($.50/each)";
-            // 
-            // SaladGrp
-            // 
-            SaladGrp.Controls.Add(SaladSide3Cbo);
-            SaladGrp.Controls.Add(SaladSide2Cbo);
-            SaladGrp.Controls.Add(SaladSide1Cbo);
-            SaladGrp.Location = new Point(630, 12);
-            SaladGrp.Name = "SaladGrp";
-            SaladGrp.Size = new Size(200, 100);
-            SaladGrp.TabIndex = 6;
-            SaladGrp.TabStop = false;
-            SaladGrp.Text = "Add-on items ($.25/each)";
-            // 
-            // HamburgerRdo
-            // 
-            HamburgerRdo.AutoSize = true;
-            HamburgerRdo.Location = new Point(6, 22);
-            HamburgerRdo.Name = "HamburgerRdo";
-            HamburgerRdo.Size = new Size(124, 19);
-            HamburgerRdo.TabIndex = 0;
-            HamburgerRdo.TabStop = true;
-            HamburgerRdo.Text = "Hamburger - $6.95";
-            HamburgerRdo.UseVisualStyleBackColor = true;
-            // 
-            // PizzaRdo
-            // 
-            PizzaRdo.AutoSize = true;
-            PizzaRdo.Location = new Point(6, 47);
-            PizzaRdo.Name = "PizzaRdo";
-            PizzaRdo.Size = new Size(89, 19);
-            PizzaRdo.TabIndex = 1;
-            PizzaRdo.TabStop = true;
-            PizzaRdo.Text = "Pizza - $5.95";
-            PizzaRdo.UseVisualStyleBackColor = true;
-            // 
-            // SaladRdo
-            // 
-            SaladRdo.AutoSize = true;
-            SaladRdo.Location = new Point(6, 72);
-            SaladRdo.Name = "SaladRdo";
-            SaladRdo.Size = new Size(91, 19);
-            SaladRdo.TabIndex = 2;
-            SaladRdo.TabStop = true;
-            SaladRdo.Text = "Salad - $4.95";
-            SaladRdo.UseVisualStyleBackColor = true;
-            // 
-            // HamburgerSide1Cbo
-            // 
-            HamburgerSide1Cbo.AutoSize = true;
-            HamburgerSide1Cbo.Location = new Point(6, 23);
-            HamburgerSide1Cbo.Name = "HamburgerSide1Cbo";
-            HamburgerSide1Cbo.Size = new Size(175, 19);
-            HamburgerSide1Cbo.TabIndex = 0;
-            HamburgerSide1Cbo.Text = "Lettuce, tomato, and onions";
-            HamburgerSide1Cbo.UseVisualStyleBackColor = true;
-            // 
-            // HamburgerSide2Cbo
-            // 
-            HamburgerSide2Cbo.AutoSize = true;
-            HamburgerSide2Cbo.Location = new Point(6, 48);
-            HamburgerSide2Cbo.Name = "HamburgerSide2Cbo";
-            HamburgerSide2Cbo.Size = new Size(179, 19);
-            HamburgerSide2Cbo.TabIndex = 1;
-            HamburgerSide2Cbo.Text = "Ketchup, mustard, and mayo";
-            HamburgerSide2Cbo.UseVisualStyleBackColor = true;
-            // 
-            // HamburgerSide3Cbo
-            // 
-            HamburgerSide3Cbo.AutoSize = true;
-            HamburgerSide3Cbo.Location = new Point(6, 73);
-            HamburgerSide3Cbo.Name = "HamburgerSide3Cbo";
-            HamburgerSide3Cbo.Size = new Size(89, 19);
-            HamburgerSide3Cbo.TabIndex = 2;
-            HamburgerSide3Cbo.Text = "French Fries";
-            HamburgerSide3Cbo.UseVisualStyleBackColor = true;
-            // 
-            // PizzaSide1Cbo
-            // 
-            PizzaSide1Cbo.AutoSize = true;
-            PizzaSide1Cbo.Location = new Point(6, 23);
-            PizzaSide1Cbo.Name = "PizzaSide1Cbo";
-            PizzaSide1Cbo.Size = new Size(80, 19);
-            PizzaSide1Cbo.TabIndex = 0;
-            PizzaSide1Cbo.Text = "Pepperoni";
-            PizzaSide1Cbo.UseVisualStyleBackColor = true;
-            // 
-            // PizzaSide2Cbo
-            // 
-            PizzaSide2Cbo.AutoSize = true;
-            PizzaSide2Cbo.Location = new Point(6, 48);
-            PizzaSide2Cbo.Name = "PizzaSide2Cbo";
-            PizzaSide2Cbo.Size = new Size(69, 19);
-            PizzaSide2Cbo.TabIndex = 1;
-            PizzaSide2Cbo.Text = "Sausage";
-            PizzaSide2Cbo.UseVisualStyleBackColor = true;
             // 
             // PizzaSide3Cbo
             // 
@@ -236,25 +255,37 @@
             PizzaSide3Cbo.Text = "Olives";
             PizzaSide3Cbo.UseVisualStyleBackColor = true;
             // 
-            // SaladSide1Cbo
+            // PizzaSide2Cbo
             // 
-            SaladSide1Cbo.AutoSize = true;
-            SaladSide1Cbo.Location = new Point(6, 22);
-            SaladSide1Cbo.Name = "SaladSide1Cbo";
-            SaladSide1Cbo.Size = new Size(75, 19);
-            SaladSide1Cbo.TabIndex = 3;
-            SaladSide1Cbo.Text = "Croutons";
-            SaladSide1Cbo.UseVisualStyleBackColor = true;
+            PizzaSide2Cbo.AutoSize = true;
+            PizzaSide2Cbo.Location = new Point(6, 48);
+            PizzaSide2Cbo.Name = "PizzaSide2Cbo";
+            PizzaSide2Cbo.Size = new Size(69, 19);
+            PizzaSide2Cbo.TabIndex = 1;
+            PizzaSide2Cbo.Text = "Sausage";
+            PizzaSide2Cbo.UseVisualStyleBackColor = true;
             // 
-            // SaladSide2Cbo
+            // PizzaSide1Cbo
             // 
-            SaladSide2Cbo.AutoSize = true;
-            SaladSide2Cbo.Location = new Point(6, 47);
-            SaladSide2Cbo.Name = "SaladSide2Cbo";
-            SaladSide2Cbo.Size = new Size(81, 19);
-            SaladSide2Cbo.TabIndex = 4;
-            SaladSide2Cbo.Text = "Bacon bits";
-            SaladSide2Cbo.UseVisualStyleBackColor = true;
+            PizzaSide1Cbo.AutoSize = true;
+            PizzaSide1Cbo.Location = new Point(6, 23);
+            PizzaSide1Cbo.Name = "PizzaSide1Cbo";
+            PizzaSide1Cbo.Size = new Size(80, 19);
+            PizzaSide1Cbo.TabIndex = 0;
+            PizzaSide1Cbo.Text = "Pepperoni";
+            PizzaSide1Cbo.UseVisualStyleBackColor = true;
+            // 
+            // SaladGrp
+            // 
+            SaladGrp.Controls.Add(SaladSide3Cbo);
+            SaladGrp.Controls.Add(SaladSide2Cbo);
+            SaladGrp.Controls.Add(SaladSide1Cbo);
+            SaladGrp.Location = new Point(218, 12);
+            SaladGrp.Name = "SaladGrp";
+            SaladGrp.Size = new Size(200, 100);
+            SaladGrp.TabIndex = 6;
+            SaladGrp.TabStop = false;
+            SaladGrp.Text = "Add-on items ($.25/each)";
             // 
             // SaladSide3Cbo
             // 
@@ -266,62 +297,31 @@
             SaladSide3Cbo.Text = "Bread sticks";
             SaladSide3Cbo.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // SaladSide2Cbo
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(40, 25);
-            label1.Name = "label1";
-            label1.Size = new Size(54, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Subtotal:";
+            SaladSide2Cbo.AutoSize = true;
+            SaladSide2Cbo.Location = new Point(6, 47);
+            SaladSide2Cbo.Name = "SaladSide2Cbo";
+            SaladSide2Cbo.Size = new Size(81, 19);
+            SaladSide2Cbo.TabIndex = 4;
+            SaladSide2Cbo.Text = "Bacon bits";
+            SaladSide2Cbo.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // SaladSide1Cbo
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(25, 54);
-            label2.Name = "label2";
-            label2.Size = new Size(69, 15);
-            label2.TabIndex = 1;
-            label2.Text = "Tax (7.75%):";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(25, 83);
-            label3.Name = "label3";
-            label3.Size = new Size(69, 15);
-            label3.TabIndex = 2;
-            label3.Text = "Order Total:";
-            // 
-            // SubtotalTxt
-            // 
-            SubtotalTxt.Location = new Point(100, 22);
-            SubtotalTxt.Name = "SubtotalTxt";
-            SubtotalTxt.ReadOnly = true;
-            SubtotalTxt.Size = new Size(100, 23);
-            SubtotalTxt.TabIndex = 3;
-            // 
-            // TaxTxt
-            // 
-            TaxTxt.Location = new Point(100, 51);
-            TaxTxt.Name = "TaxTxt";
-            TaxTxt.ReadOnly = true;
-            TaxTxt.Size = new Size(100, 23);
-            TaxTxt.TabIndex = 4;
-            // 
-            // OrderTotalTxt
-            // 
-            OrderTotalTxt.Location = new Point(100, 80);
-            OrderTotalTxt.Name = "OrderTotalTxt";
-            OrderTotalTxt.ReadOnly = true;
-            OrderTotalTxt.Size = new Size(100, 23);
-            OrderTotalTxt.TabIndex = 5;
+            SaladSide1Cbo.AutoSize = true;
+            SaladSide1Cbo.Location = new Point(6, 22);
+            SaladSide1Cbo.Name = "SaladSide1Cbo";
+            SaladSide1Cbo.Size = new Size(75, 19);
+            SaladSide1Cbo.TabIndex = 3;
+            SaladSide1Cbo.Text = "Croutons";
+            SaladSide1Cbo.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(850, 303);
+            ClientSize = new Size(435, 249);
             Controls.Add(SaladGrp);
             Controls.Add(PizzaGrp);
             Controls.Add(ExitBtn);
@@ -330,7 +330,7 @@
             Controls.Add(HamburgerGrp);
             Controls.Add(MainCourseGrp);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Lunch Order";
             MainCourseGrp.ResumeLayout(false);
             MainCourseGrp.PerformLayout();
             HamburgerGrp.ResumeLayout(false);

@@ -13,7 +13,51 @@ namespace LunchOrderAppGit
         public Form1()
         {
             InitializeComponent();
-            
+            HamburgerRdo.CheckedChanged += new EventHandler(MainCourseRdo_CheckedChanged);
+            PizzaRdo.CheckedChanged += new EventHandler(MainCourseRdo_CheckedChanged);
+            SaladRdo.CheckedChanged += new EventHandler(MainCourseRdo_CheckedChanged);
+            HamburgerSide1Cbo.CheckedChanged += new EventHandler(AddOnCbo_CheckedChanged);
+            HamburgerSide2Cbo.CheckedChanged += new EventHandler(AddOnCbo_CheckedChanged);
+            HamburgerSide3Cbo.CheckedChanged += new EventHandler(AddOnCbo_CheckedChanged);
+            PizzaSide1Cbo.CheckedChanged += new EventHandler(AddOnCbo_CheckedChanged);
+            PizzaSide2Cbo.CheckedChanged += new EventHandler(AddOnCbo_CheckedChanged);
+            PizzaSide3Cbo.CheckedChanged += new EventHandler(AddOnCbo_CheckedChanged);
+            SaladSide1Cbo.CheckedChanged += new EventHandler(AddOnCbo_CheckedChanged);
+            SaladSide2Cbo.CheckedChanged += new EventHandler(AddOnCbo_CheckedChanged);
+            SaladSide3Cbo.CheckedChanged += new EventHandler(AddOnCbo_CheckedChanged);
+        }
+
+        private void MainCourseRdo_CheckedChanged(object sender, EventArgs e)
+        {
+            HamburgerGrp.Visible = HamburgerRdo.Checked;
+            PizzaGrp.Visible = PizzaRdo.Checked;
+            SaladGrp.Visible = SaladRdo.Checked;
+            ClearOrderTotals();
+            ClearAddOns();
+        }
+
+        private void AddOnCbo_CheckedChanged(object sender, EventArgs e)
+        {
+            ClearOrderTotals();
+        }
+
+        private void ClearOrderTotals()
+        {
+            SubtotalTxt.Text = string.Empty;
+            TaxTxt.Text = string.Empty;
+            OrderTotalTxt.Text = string.Empty;
+        }
+        private void ClearAddOns()
+        {
+            HamburgerSide1Cbo.Checked = false;
+            HamburgerSide2Cbo.Checked = false;
+            HamburgerSide3Cbo.Checked = false;
+            PizzaSide1Cbo.Checked = false;
+            PizzaSide2Cbo.Checked = false;
+            PizzaSide3Cbo.Checked = false;
+            SaladSide1Cbo.Checked = false;
+            SaladSide2Cbo.Checked = false;
+            SaladSide3Cbo.Checked = false;
         }
 
         private void OrderBtn_Click(object sender, EventArgs e)
