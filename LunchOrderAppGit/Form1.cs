@@ -47,6 +47,7 @@ namespace LunchOrderAppGit
             TaxTxt.Text = string.Empty;
             OrderTotalTxt.Text = string.Empty;
         }
+
         private void ClearAddOns()
         {
             HamburgerSide1Cbo.Checked = false;
