@@ -28,343 +28,346 @@
         /// </summary>
         private void InitializeComponent()
         {
-            groupBox1 = new GroupBox();
-            groupBox2 = new GroupBox();
-            groupBox3 = new GroupBox();
-            button1 = new Button();
-            button2 = new Button();
-            groupBox4 = new GroupBox();
-            groupBox5 = new GroupBox();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
-            radioButton3 = new RadioButton();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox3 = new CheckBox();
-            checkBox4 = new CheckBox();
-            checkBox5 = new CheckBox();
-            checkBox6 = new CheckBox();
-            checkBox7 = new CheckBox();
-            checkBox8 = new CheckBox();
-            checkBox9 = new CheckBox();
+            MainCourseGrp = new GroupBox();
+            HamburgerGrp = new GroupBox();
+            OrderTotalGrp = new GroupBox();
+            OrderBtn = new Button();
+            ExitBtn = new Button();
+            PizzaGrp = new GroupBox();
+            SaladGrp = new GroupBox();
+            HamburgerRdo = new RadioButton();
+            PizzaRdo = new RadioButton();
+            SaladRdo = new RadioButton();
+            HamburgerSide1Cbo = new CheckBox();
+            HamburgerSide2Cbo = new CheckBox();
+            HamburgerSide3Cbo = new CheckBox();
+            PizzaSide1Cbo = new CheckBox();
+            PizzaSide2Cbo = new CheckBox();
+            PizzaSide3Cbo = new CheckBox();
+            SaladSide1Cbo = new CheckBox();
+            SaladSide2Cbo = new CheckBox();
+            SaladSide3Cbo = new CheckBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox3.SuspendLayout();
-            groupBox4.SuspendLayout();
-            groupBox5.SuspendLayout();
+            SubtotalTxt = new TextBox();
+            TaxTxt = new TextBox();
+            OrderTotalTxt = new TextBox();
+            MainCourseGrp.SuspendLayout();
+            HamburgerGrp.SuspendLayout();
+            OrderTotalGrp.SuspendLayout();
+            PizzaGrp.SuspendLayout();
+            SaladGrp.SuspendLayout();
             SuspendLayout();
             // 
-            // groupBox1
+            // MainCourseGrp
             // 
-            groupBox1.Controls.Add(radioButton3);
-            groupBox1.Controls.Add(radioButton2);
-            groupBox1.Controls.Add(radioButton1);
-            groupBox1.Location = new Point(12, 12);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(200, 100);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "groupBox1";
+            MainCourseGrp.Controls.Add(SaladRdo);
+            MainCourseGrp.Controls.Add(PizzaRdo);
+            MainCourseGrp.Controls.Add(HamburgerRdo);
+            MainCourseGrp.Location = new Point(12, 12);
+            MainCourseGrp.Name = "MainCourseGrp";
+            MainCourseGrp.Size = new Size(200, 100);
+            MainCourseGrp.TabIndex = 0;
+            MainCourseGrp.TabStop = false;
+            MainCourseGrp.Text = "Main Course";
             // 
-            // groupBox2
+            // HamburgerGrp
             // 
-            groupBox2.Controls.Add(checkBox3);
-            groupBox2.Controls.Add(checkBox2);
-            groupBox2.Controls.Add(checkBox1);
-            groupBox2.Location = new Point(218, 12);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(200, 100);
-            groupBox2.TabIndex = 1;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "groupBox2";
+            HamburgerGrp.Controls.Add(HamburgerSide3Cbo);
+            HamburgerGrp.Controls.Add(HamburgerSide2Cbo);
+            HamburgerGrp.Controls.Add(HamburgerSide1Cbo);
+            HamburgerGrp.Location = new Point(218, 12);
+            HamburgerGrp.Name = "HamburgerGrp";
+            HamburgerGrp.Size = new Size(200, 100);
+            HamburgerGrp.TabIndex = 1;
+            HamburgerGrp.TabStop = false;
+            HamburgerGrp.Text = "Add-on items ($.75/each)";
             // 
-            // groupBox3
+            // OrderTotalGrp
             // 
-            groupBox3.Controls.Add(textBox3);
-            groupBox3.Controls.Add(textBox2);
-            groupBox3.Controls.Add(textBox1);
-            groupBox3.Controls.Add(label3);
-            groupBox3.Controls.Add(label2);
-            groupBox3.Controls.Add(label1);
-            groupBox3.Location = new Point(12, 118);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(200, 100);
-            groupBox3.TabIndex = 2;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "groupBox3";
+            OrderTotalGrp.Controls.Add(OrderTotalTxt);
+            OrderTotalGrp.Controls.Add(TaxTxt);
+            OrderTotalGrp.Controls.Add(SubtotalTxt);
+            OrderTotalGrp.Controls.Add(label3);
+            OrderTotalGrp.Controls.Add(label2);
+            OrderTotalGrp.Controls.Add(label1);
+            OrderTotalGrp.Location = new Point(12, 118);
+            OrderTotalGrp.Name = "OrderTotalGrp";
+            OrderTotalGrp.Size = new Size(240, 118);
+            OrderTotalGrp.TabIndex = 2;
+            OrderTotalGrp.TabStop = false;
+            OrderTotalGrp.Text = "groupBox3";
             // 
-            // button1
+            // OrderBtn
             // 
-            button1.Location = new Point(343, 127);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 3;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            OrderBtn.Location = new Point(315, 127);
+            OrderBtn.Name = "OrderBtn";
+            OrderBtn.Size = new Size(103, 31);
+            OrderBtn.TabIndex = 3;
+            OrderBtn.Text = "Place Order";
+            OrderBtn.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // ExitBtn
             // 
-            button2.Location = new Point(343, 195);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 4;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            ExitBtn.Location = new Point(315, 192);
+            ExitBtn.Name = "ExitBtn";
+            ExitBtn.Size = new Size(103, 33);
+            ExitBtn.TabIndex = 4;
+            ExitBtn.Text = "Exit";
+            ExitBtn.UseVisualStyleBackColor = true;
             // 
-            // groupBox4
+            // PizzaGrp
             // 
-            groupBox4.Controls.Add(checkBox6);
-            groupBox4.Controls.Add(checkBox5);
-            groupBox4.Controls.Add(checkBox4);
-            groupBox4.Location = new Point(424, 12);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(200, 100);
-            groupBox4.TabIndex = 5;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "groupBox4";
+            PizzaGrp.Controls.Add(PizzaSide3Cbo);
+            PizzaGrp.Controls.Add(PizzaSide2Cbo);
+            PizzaGrp.Controls.Add(PizzaSide1Cbo);
+            PizzaGrp.Location = new Point(424, 12);
+            PizzaGrp.Name = "PizzaGrp";
+            PizzaGrp.Size = new Size(200, 100);
+            PizzaGrp.TabIndex = 5;
+            PizzaGrp.TabStop = false;
+            PizzaGrp.Text = "Add-on items ($.50/each)";
             // 
-            // groupBox5
+            // SaladGrp
             // 
-            groupBox5.Controls.Add(checkBox9);
-            groupBox5.Controls.Add(checkBox8);
-            groupBox5.Controls.Add(checkBox7);
-            groupBox5.Location = new Point(630, 12);
-            groupBox5.Name = "groupBox5";
-            groupBox5.Size = new Size(200, 100);
-            groupBox5.TabIndex = 6;
-            groupBox5.TabStop = false;
-            groupBox5.Text = "groupBox5";
+            SaladGrp.Controls.Add(SaladSide3Cbo);
+            SaladGrp.Controls.Add(SaladSide2Cbo);
+            SaladGrp.Controls.Add(SaladSide1Cbo);
+            SaladGrp.Location = new Point(630, 12);
+            SaladGrp.Name = "SaladGrp";
+            SaladGrp.Size = new Size(200, 100);
+            SaladGrp.TabIndex = 6;
+            SaladGrp.TabStop = false;
+            SaladGrp.Text = "Add-on items ($.25/each)";
             // 
-            // radioButton1
+            // HamburgerRdo
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(6, 22);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(94, 19);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "radioButton1";
-            radioButton1.UseVisualStyleBackColor = true;
+            HamburgerRdo.AutoSize = true;
+            HamburgerRdo.Location = new Point(6, 22);
+            HamburgerRdo.Name = "HamburgerRdo";
+            HamburgerRdo.Size = new Size(124, 19);
+            HamburgerRdo.TabIndex = 0;
+            HamburgerRdo.TabStop = true;
+            HamburgerRdo.Text = "Hamburger - $6.95";
+            HamburgerRdo.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // PizzaRdo
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(6, 47);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(94, 19);
-            radioButton2.TabIndex = 1;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "radioButton2";
-            radioButton2.UseVisualStyleBackColor = true;
+            PizzaRdo.AutoSize = true;
+            PizzaRdo.Location = new Point(6, 47);
+            PizzaRdo.Name = "PizzaRdo";
+            PizzaRdo.Size = new Size(89, 19);
+            PizzaRdo.TabIndex = 1;
+            PizzaRdo.TabStop = true;
+            PizzaRdo.Text = "Pizza - $5.95";
+            PizzaRdo.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // SaladRdo
             // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(6, 72);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(94, 19);
-            radioButton3.TabIndex = 2;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "radioButton3";
-            radioButton3.UseVisualStyleBackColor = true;
+            SaladRdo.AutoSize = true;
+            SaladRdo.Location = new Point(6, 72);
+            SaladRdo.Name = "SaladRdo";
+            SaladRdo.Size = new Size(91, 19);
+            SaladRdo.TabIndex = 2;
+            SaladRdo.TabStop = true;
+            SaladRdo.Text = "Salad - $4.95";
+            SaladRdo.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // HamburgerSide1Cbo
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(6, 23);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(82, 19);
-            checkBox1.TabIndex = 0;
-            checkBox1.Text = "checkBox1";
-            checkBox1.UseVisualStyleBackColor = true;
+            HamburgerSide1Cbo.AutoSize = true;
+            HamburgerSide1Cbo.Location = new Point(6, 23);
+            HamburgerSide1Cbo.Name = "HamburgerSide1Cbo";
+            HamburgerSide1Cbo.Size = new Size(175, 19);
+            HamburgerSide1Cbo.TabIndex = 0;
+            HamburgerSide1Cbo.Text = "Lettuce, tomato, and onions";
+            HamburgerSide1Cbo.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // HamburgerSide2Cbo
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(6, 48);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(82, 19);
-            checkBox2.TabIndex = 1;
-            checkBox2.Text = "checkBox2";
-            checkBox2.UseVisualStyleBackColor = true;
+            HamburgerSide2Cbo.AutoSize = true;
+            HamburgerSide2Cbo.Location = new Point(6, 48);
+            HamburgerSide2Cbo.Name = "HamburgerSide2Cbo";
+            HamburgerSide2Cbo.Size = new Size(179, 19);
+            HamburgerSide2Cbo.TabIndex = 1;
+            HamburgerSide2Cbo.Text = "Ketchup, mustard, and mayo";
+            HamburgerSide2Cbo.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // HamburgerSide3Cbo
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(6, 73);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(82, 19);
-            checkBox3.TabIndex = 2;
-            checkBox3.Text = "checkBox3";
-            checkBox3.UseVisualStyleBackColor = true;
+            HamburgerSide3Cbo.AutoSize = true;
+            HamburgerSide3Cbo.Location = new Point(6, 73);
+            HamburgerSide3Cbo.Name = "HamburgerSide3Cbo";
+            HamburgerSide3Cbo.Size = new Size(89, 19);
+            HamburgerSide3Cbo.TabIndex = 2;
+            HamburgerSide3Cbo.Text = "French Fries";
+            HamburgerSide3Cbo.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // PizzaSide1Cbo
             // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(6, 23);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(82, 19);
-            checkBox4.TabIndex = 0;
-            checkBox4.Text = "checkBox4";
-            checkBox4.UseVisualStyleBackColor = true;
+            PizzaSide1Cbo.AutoSize = true;
+            PizzaSide1Cbo.Location = new Point(6, 23);
+            PizzaSide1Cbo.Name = "PizzaSide1Cbo";
+            PizzaSide1Cbo.Size = new Size(80, 19);
+            PizzaSide1Cbo.TabIndex = 0;
+            PizzaSide1Cbo.Text = "Pepperoni";
+            PizzaSide1Cbo.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // PizzaSide2Cbo
             // 
-            checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(6, 48);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(82, 19);
-            checkBox5.TabIndex = 1;
-            checkBox5.Text = "checkBox5";
-            checkBox5.UseVisualStyleBackColor = true;
+            PizzaSide2Cbo.AutoSize = true;
+            PizzaSide2Cbo.Location = new Point(6, 48);
+            PizzaSide2Cbo.Name = "PizzaSide2Cbo";
+            PizzaSide2Cbo.Size = new Size(69, 19);
+            PizzaSide2Cbo.TabIndex = 1;
+            PizzaSide2Cbo.Text = "Sausage";
+            PizzaSide2Cbo.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // PizzaSide3Cbo
             // 
-            checkBox6.AutoSize = true;
-            checkBox6.Location = new Point(6, 73);
-            checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(82, 19);
-            checkBox6.TabIndex = 2;
-            checkBox6.Text = "checkBox6";
-            checkBox6.UseVisualStyleBackColor = true;
+            PizzaSide3Cbo.AutoSize = true;
+            PizzaSide3Cbo.Location = new Point(6, 73);
+            PizzaSide3Cbo.Name = "PizzaSide3Cbo";
+            PizzaSide3Cbo.Size = new Size(58, 19);
+            PizzaSide3Cbo.TabIndex = 2;
+            PizzaSide3Cbo.Text = "Olives";
+            PizzaSide3Cbo.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // SaladSide1Cbo
             // 
-            checkBox7.AutoSize = true;
-            checkBox7.Location = new Point(6, 22);
-            checkBox7.Name = "checkBox7";
-            checkBox7.Size = new Size(82, 19);
-            checkBox7.TabIndex = 3;
-            checkBox7.Text = "checkBox7";
-            checkBox7.UseVisualStyleBackColor = true;
+            SaladSide1Cbo.AutoSize = true;
+            SaladSide1Cbo.Location = new Point(6, 22);
+            SaladSide1Cbo.Name = "SaladSide1Cbo";
+            SaladSide1Cbo.Size = new Size(75, 19);
+            SaladSide1Cbo.TabIndex = 3;
+            SaladSide1Cbo.Text = "Croutons";
+            SaladSide1Cbo.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // SaladSide2Cbo
             // 
-            checkBox8.AutoSize = true;
-            checkBox8.Location = new Point(6, 47);
-            checkBox8.Name = "checkBox8";
-            checkBox8.Size = new Size(82, 19);
-            checkBox8.TabIndex = 4;
-            checkBox8.Text = "checkBox8";
-            checkBox8.UseVisualStyleBackColor = true;
+            SaladSide2Cbo.AutoSize = true;
+            SaladSide2Cbo.Location = new Point(6, 47);
+            SaladSide2Cbo.Name = "SaladSide2Cbo";
+            SaladSide2Cbo.Size = new Size(81, 19);
+            SaladSide2Cbo.TabIndex = 4;
+            SaladSide2Cbo.Text = "Bacon bits";
+            SaladSide2Cbo.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // SaladSide3Cbo
             // 
-            checkBox9.AutoSize = true;
-            checkBox9.Location = new Point(6, 72);
-            checkBox9.Name = "checkBox9";
-            checkBox9.Size = new Size(82, 19);
-            checkBox9.TabIndex = 5;
-            checkBox9.Text = "checkBox9";
-            checkBox9.UseVisualStyleBackColor = true;
+            SaladSide3Cbo.AutoSize = true;
+            SaladSide3Cbo.Location = new Point(6, 72);
+            SaladSide3Cbo.Name = "SaladSide3Cbo";
+            SaladSide3Cbo.Size = new Size(88, 19);
+            SaladSide3Cbo.TabIndex = 5;
+            SaladSide3Cbo.Text = "Bread sticks";
+            SaladSide3Cbo.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(6, 19);
+            label1.Location = new Point(40, 25);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(54, 15);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "Subtotal:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(6, 48);
+            label2.Location = new Point(25, 54);
             label2.Name = "label2";
-            label2.Size = new Size(38, 15);
+            label2.Size = new Size(69, 15);
             label2.TabIndex = 1;
-            label2.Text = "label2";
+            label2.Text = "Tax (7.75%):";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(6, 77);
+            label3.Location = new Point(25, 83);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(69, 15);
             label3.TabIndex = 2;
-            label3.Text = "label3";
+            label3.Text = "Order Total:";
             // 
-            // textBox1
+            // SubtotalTxt
             // 
-            textBox1.Location = new Point(94, 16);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 3;
+            SubtotalTxt.Location = new Point(100, 22);
+            SubtotalTxt.Name = "SubtotalTxt";
+            SubtotalTxt.ReadOnly = true;
+            SubtotalTxt.Size = new Size(100, 23);
+            SubtotalTxt.TabIndex = 3;
             // 
-            // textBox2
+            // TaxTxt
             // 
-            textBox2.Location = new Point(94, 45);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 4;
+            TaxTxt.Location = new Point(100, 51);
+            TaxTxt.Name = "TaxTxt";
+            TaxTxt.ReadOnly = true;
+            TaxTxt.Size = new Size(100, 23);
+            TaxTxt.TabIndex = 4;
             // 
-            // textBox3
+            // OrderTotalTxt
             // 
-            textBox3.Location = new Point(94, 74);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 5;
+            OrderTotalTxt.Location = new Point(100, 80);
+            OrderTotalTxt.Name = "OrderTotalTxt";
+            OrderTotalTxt.ReadOnly = true;
+            OrderTotalTxt.Size = new Size(100, 23);
+            OrderTotalTxt.TabIndex = 5;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(850, 239);
-            Controls.Add(groupBox5);
-            Controls.Add(groupBox4);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
+            ClientSize = new Size(850, 303);
+            Controls.Add(SaladGrp);
+            Controls.Add(PizzaGrp);
+            Controls.Add(ExitBtn);
+            Controls.Add(OrderBtn);
+            Controls.Add(OrderTotalGrp);
+            Controls.Add(HamburgerGrp);
+            Controls.Add(MainCourseGrp);
             Name = "Form1";
             Text = "Form1";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
-            groupBox4.ResumeLayout(false);
-            groupBox4.PerformLayout();
-            groupBox5.ResumeLayout(false);
-            groupBox5.PerformLayout();
+            MainCourseGrp.ResumeLayout(false);
+            MainCourseGrp.PerformLayout();
+            HamburgerGrp.ResumeLayout(false);
+            HamburgerGrp.PerformLayout();
+            OrderTotalGrp.ResumeLayout(false);
+            OrderTotalGrp.PerformLayout();
+            PizzaGrp.ResumeLayout(false);
+            PizzaGrp.PerformLayout();
+            SaladGrp.ResumeLayout(false);
+            SaladGrp.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox groupBox1;
-        private GroupBox groupBox2;
-        private GroupBox groupBox3;
-        private Button button1;
-        private Button button2;
-        private RadioButton radioButton3;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
-        private CheckBox checkBox3;
-        private CheckBox checkBox2;
-        private CheckBox checkBox1;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private GroupBox MainCourseGrp;
+        private GroupBox HamburgerGrp;
+        private GroupBox OrderTotalGrp;
+        private Button OrderBtn;
+        private Button ExitBtn;
+        private RadioButton SaladRdo;
+        private RadioButton PizzaRdo;
+        private RadioButton HamburgerRdo;
+        private CheckBox HamburgerSide3Cbo;
+        private CheckBox HamburgerSide2Cbo;
+        private CheckBox HamburgerSide1Cbo;
+        private TextBox OrderTotalTxt;
+        private TextBox TaxTxt;
+        private TextBox SubtotalTxt;
         private Label label3;
         private Label label2;
         private Label label1;
-        private GroupBox groupBox4;
-        private CheckBox checkBox6;
-        private CheckBox checkBox5;
-        private CheckBox checkBox4;
-        private GroupBox groupBox5;
-        private CheckBox checkBox9;
-        private CheckBox checkBox8;
-        private CheckBox checkBox7;
+        private GroupBox PizzaGrp;
+        private CheckBox PizzaSide3Cbo;
+        private CheckBox PizzaSide2Cbo;
+        private CheckBox PizzaSide1Cbo;
+        private GroupBox SaladGrp;
+        private CheckBox SaladSide3Cbo;
+        private CheckBox SaladSide2Cbo;
+        private CheckBox SaladSide1Cbo;
     }
 }
