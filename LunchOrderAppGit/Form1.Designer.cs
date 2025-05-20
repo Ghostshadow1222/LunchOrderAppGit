@@ -107,6 +107,7 @@
             OrderBtn.TabIndex = 3;
             OrderBtn.Text = "Place Order";
             OrderBtn.UseVisualStyleBackColor = true;
+            OrderBtn.Click += OrderBtn_Click;
             // 
             // ExitBtn
             // 
@@ -116,6 +117,7 @@
             ExitBtn.TabIndex = 4;
             ExitBtn.Text = "Exit";
             ExitBtn.UseVisualStyleBackColor = true;
+            ExitBtn.Click += ExitBtn_Click;
             // 
             // PizzaGrp
             // 
